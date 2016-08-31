@@ -6,8 +6,32 @@ ezPyChart scratches a specific itch: generating a pie chart from a tab-delimited
 Installation
 ============
 
-Use [pip](https://pip.pypa.io/en/stable/) install.
+Matplotlib needs to be installed for ezPyChart to function.
 
+Install matplotlib via OS package manager
+-----------------------------------------
+
+On Debian/Ubuntu:
+```
+sudo apt-get install python-matplotlib
+```
+
+Then you can install ezPyChart with dependencies.
+```
+pip install --no-deps ezPyChart
+```
+
+Install matplotlib via pip
+--------------------------
+
+Use [pip](https://pip.pypa.io/en/stable/) install, but pip will need to build matplotlib and NumPy. Some dev libraries need to be installed for the build step to succeed.
+
+On Debian/Ubuntu:
+```
+sudo apt-get install python-dev libfreetype6-dev
+```
+
+After those development libraries are installed, you can run
 ```
 pip install ezPyChart
 ```
